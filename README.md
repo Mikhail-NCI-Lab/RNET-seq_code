@@ -1,1 +1,1 @@
-# Mikhail_Lab
+# RNET-seq_code
