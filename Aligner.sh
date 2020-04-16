@@ -6,7 +6,7 @@ cutadapt -a GATCGGAAGAGCACACGTCTGAACTCCAGTCAC -o original_data_R1_001_cutadapt.f
 clumpify.sh in=original_data_R1_001_cutadapt.fastq out=original_data_R1_001_cutadapt_remD.fastq subs=0 dedupe=t
 
 # Remove barcode from the processed FastQ file.
-cutadapt --cut 6 1096_U10_S1_R1_001_cutadapt_remD.fastq -o original_data_R1_001_cutadapt_remD_6Ntrim.fastq
+cutadapt --cut 6 original_data_R1_001_cutadapt_remD.fastq -o original_data_R1_001_cutadapt_remD_6Ntrim.fastq
 
 # Align reads in the processed FastQ file to E. coli MG1655 genome NC_000913.2.
 bowtie ./Bowtie_index/NC_000913.2 -q original_data_R1_001_cutadapt_remD_6Ntrim.fastq --best --strata -v 1 -m 1 -p 10 -S original_data_processed.sam
