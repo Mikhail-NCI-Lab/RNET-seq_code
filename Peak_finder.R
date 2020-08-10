@@ -1,6 +1,4 @@
-install.packages("data.table")
 library(data.table)
-install.packages("RcppRoll")
 library(RcppRoll)
 ########################################
 # Calculate the pause sites on the positive strand.
