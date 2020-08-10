@@ -1,3 +1,4 @@
+#!/bin/sh
 
 # Remove adaptor from the original FastQ file.
 cutadapt -a GATCGGAAGAGCACACGTCTGAACTCCAGTCAC -o original_data_R1_001_cutadapt.fastq original_data_R1_001.fastq
